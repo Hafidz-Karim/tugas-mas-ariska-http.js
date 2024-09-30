@@ -1,0 +1,19 @@
+
+ // untuk menghitung panjang dari suatu string
+      
+	function reverseString(str) {
+	
+	 let dataString = str.length
+	return dataString;
+	}
+	
+	console.log(reverseString("javascript"));
+
+ // function untuk membalikan string
+
+	function reverseString2(str) {
+	return str.split("").reverse().join("");
+}
+	console.log(reverseString2("hello"));
+
+

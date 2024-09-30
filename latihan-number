@@ -1,0 +1,98 @@
+
+// function menghitung panjang siku siku segitiga miring
+
+function calculateHypotenuse(a, b) {
+return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+}
+
+let a = 3;
+let b = 4;
+console.log(calculateHypotenuse(a, b));
+// output = 5:
+
+
+// Function Menghitung total harga setelah diskon %5 (rumus = (total = hargaAsli - diskon) )
+function calculateDiscountPrice(originalPrice, discountPercentage) 
+{
+let discount = discountPercentage / 100; 
+return originalPrice * ( 1 - discount);
+};
+//Hasilnya adalah 95
+
+// Contoh penggunaan
+let originalPrice = 100;
+let discountPercentage = 5;
+console.log(calculateDiscountPrice(originalPrice, discountPercentage));
+
+
+
+// Membuat angka acak antara 0 - 100;
+function getRandomNumber(max) {
+return Math.floor(Math.random() * max);
+}
+
+// contoh penggunaan
+let max = (100);
+console.log(getRandomNumber(max));
+//Hasilnya adalah acak antara 0 - 100. dan hasil randomnya sekarang = 45;
+
+// Menghitung luas lingkaran
+function calculateCircleArea(radius) {
+return Math.PI * Math.pow(radius, 2);
+}
+
+//Contoh penggunaan
+let radius = 5;
+console.log(calculateCircleArea(radius));
+//Output = 78.00000000
+
+
+// Menghitung volume Balok
+function calculateBoxValume(length, width, height) {
+return length * width * height;
+}
+
+// contoh penggunaan
+let length = 4;
+let width = 5;
+let height = 6;
+console.log(calculateBoxValume(length, width, height));
+//Output = 120
+
+
+// Menghitung luas segitiga
+function hitungLuasSegitiga(base, tinggi) {
+return 0.5 * base * tinggi;
+}
+
+// contoh penggunaan
+let base = 10;
+let tinggi = 5;
+console.log(hitungLuasSegitiga(base, tinggi));
+// Output = 25.
+
+
+
+// Menghitung rata rata angka dari beberapa angka
+function hitungRataAngka(angka) {
+let total = angka.reduce((acc, num) => acc + num, 0);
+return total / angka.length;
+}
+
+// Contoh pengunaan
+let angka = [10, 20, 30, 40,];
+console.log(hitungRataAngka(angka));
+// Output = 25;
+
+
+
+// Menghitung total Pembayaran dengan total pajak 12%
+function hitungDenganPajak(hargaAsli, taxPercentage) {
+let tax = taxPercentage;
+return hargaAsli * (1 + tax);
+}
+
+// Contoh penggunaan
+let hargaAsli = 200;
+let taxPercentage = 12;
+console.log(hitungDenganPajak(hargaAsli, taxPercentage)); 
